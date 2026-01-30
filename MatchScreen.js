@@ -41,8 +41,8 @@ export default function MatchScreen({ route, navigation }) {
                 </View>
             </View>
 
-            <TouchableOpacity style={styles.backButton} onPress={() => navigation.goBack()}>
-                <Text style={styles.backButtonText}>VOLVER</Text>
+            <TouchableOpacity style={styles.backButton} onPress={() => navigation.navigate('Game', { team1, team2 })}>
+                <Text style={styles.backButtonText}>EMPEZAR</Text>
             </TouchableOpacity>
         </SafeAreaView>
     );
